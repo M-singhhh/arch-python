@@ -14,4 +14,5 @@ pos = nx.spring_layout(G)
 
 nx.draw(G , pos , with_labels = True ,node_size = 2000 , arrows = True )
 
-plt.savefig("graph.png")
+plt.savefig("graph.png") 
+
