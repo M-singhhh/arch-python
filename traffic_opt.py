@@ -35,10 +35,3 @@ nx.draw(G , pos , with_labels = True ,node_size = 2000 ,width = weights, arrows 
 nx.draw_networkx_edge_labels(G,pos, edge_labels = edge_lables)
 plt.savefig("graph.png") 
 
-def flow(d):
-    return d*(1-d) #this will return the the flow while density is the parameter it takes 
-#how it works ? --> flow = how many car exist * how fast are they moving = density * velocity 
-# and as velocity inversely prop density so we replace velocity with function of density 
-#  why we took only this func d*(d-1) cause at medium density flow will be the best which this function staisfies 
-# we can take any function into account which follow this constraints q (0) = 0 & q(1) = 0 cause no cars no flow and jam no flow either 
-
